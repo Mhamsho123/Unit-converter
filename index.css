@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: lightgray;
+    margin: 0px;
 }
 
 .hero-section {
@@ -14,14 +15,49 @@ body {
 
 .head {
     font-weight: bolder;
+    font-size: 3rem;
 }
 
 .input {
     height: 100px;
+    width: 150px;
     background-color: transparent;
     color: white;
     text-align: center;
-    font-size: larger;
+    font-size: 5rem;
     border-radius: 5px;
     border: 1px solid white;
+    padding: 0px;
+    margin: 10px 0px 30px 0px;
+}
+
+
+.convert-btn {
+
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    font-size: larger;
+    margin-bottom: 50px;
+
+}
+
+.conversion-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px;
+    gap: 30px;
+}
+
+.conversion {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    width: 800px;
+    height: 150px;
 }
