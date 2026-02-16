@@ -3,14 +3,21 @@ let inputEl = document.getElementById("input-element")
 let lengthEl = document.getElementById("length-element")
 let volumeEl = document.getElementById("volume-element")
 let massEl = document.getElementById("mass-element")
-
+let errorEl = document.getElementById("error")
 
 
 convertBtn.addEventListener("click", function () {
-    renderLength(inputEl.value)
-    renderVolume(inputEl.value)
-    renderMass(inputEl.value)
-    inputEl.value = ""
+    let value = inputEl.value
+
+    if (value === "" || isNaN(value)) {
+        errorEl.textContent = `Error no number detected`
+    } else {
+        renderLength(inputEl.value)
+        renderVolume(inputEl.value)
+        renderMass(inputEl.value)
+        inputEl.value = ""
+        errorEl.textContent = ""
+    }
 
 })
 
