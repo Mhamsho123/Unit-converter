@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: lightgray;
+}
+
+.hero-section {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.head {
+    font-weight: bolder;
+}
+
+.input {
+    height: 100px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    border-radius: 5px;
+    border: 1px solid white;
+}
