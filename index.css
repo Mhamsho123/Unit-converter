@@ -5,7 +5,7 @@ body {
 }
 
 .hero-section {
-    background-color: purple;
+    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
